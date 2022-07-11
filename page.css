@@ -1,0 +1,248 @@
+body {
+    margin: 0 auto;	
+}
+.container-fluid {
+	height: 100vh;
+    overflow: auto;
+}
+#nav {
+    margin-bottom: .625em;
+}
+#logo {
+    padding: 10px 0;
+}
+#navbar {
+    border: 5px solid hsl(233, 26%, 24%);
+}
+.active {
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+} 
+#navbar a {
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+}
+#navbar input {
+    margin-left: 120px;
+} 
+#navbar input {
+    display: none;
+} 
+div input {
+    width: 120px;
+    font-size: .75rem;
+    padding: 3px 10px 7px;
+    border: #d3d3d3;
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(136, 65%, 51%);
+}
+#head, #zero, #one {
+    margin: 0;
+    padding: 0;
+}
+#head, #one, #two {
+    width: 100%;
+    float: left;
+}
+#zero, #three {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+}
+#intro {
+    text-align: center;
+    padding: 20px 20px 40px;
+	font-size: 1rem;
+}
+#intro h1 {
+    font-size: 1.875rem;
+}
+#introImg {
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position: 50% 50%;
+}
+#introImg img {
+    max-width: 70%;
+    height: auto;
+}
+#one {
+	font-size: .875rem;
+}
+a {
+    color: #4169e1; 
+    font-size: 1rem;
+}
+#one {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: aliceblue;
+}
+#one img {
+    padding: 30px 0;
+}
+#one .bank {
+    font-size: 1.25em;
+}
+.article {
+    width: 100%;
+    padding: 20px;
+}
+#two {
+    margin: 20px 0;
+}
+#two img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#two a:hover, #three a:hover {
+    color: hsl(136, 65%, 51%);
+    text-decoration: none;
+}
+.author {
+    padding: 20px 20px 0;
+    margin-bottom: 5px;
+}
+.art, .text {
+    padding: 0 20px;
+    margin: 0 0 5px;
+}
+#three {
+    margin: 20px 0 0;
+    padding: 30px;
+    text-align: center;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(233, 26%, 24%);
+    border: 1px solid hsl(233, 26%, 24%);
+}
+#three a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+#three .logo {
+    padding: 5px 10px;
+    border-radius: 15px;
+	background-color: hsl(0, 0%, 100%); 
+}
+#three p {
+    font-size: 1em;
+    padding: 0;
+    margin-bottom: 5px;
+    text-align: center;
+	color: hsl(0, 0%, 100%);           
+}
+#three input {
+    margin-bottom: 10px;
+}
+#social {
+    margin: 10px 0;
+    padding: 10px;
+}
+#social img {
+    margin: 0;
+    padding: 10px 3px;
+	display: inline;
+}
+.attribution {
+    padding: 20px; 
+    font-size: 1rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 576px) {
+    
+#zero, #one, #two, #three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: auto;
+}
+#intro {
+    padding: 20px 50px 40px;
+}
+#three input {
+    margin-top: 10px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+	
+#navbar {
+	padding-left: 0;
+}
+#logo {
+    padding: 20px 30px;
+} 
+#intro {
+    float: left;
+    padding: 100px 0 100px 20px;
+}
+#intro h1 {
+    font-size: 1.875rem;
+}
+#introImg img {
+    max-width: 70%;
+    height: auto;
+}
+#introImg {
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position: 0% 10%;
+}
+#one .bank {
+    padding: 0 100px;
+}
+#social img {
+    padding: 20px 3px;
+}
+}
+
+@media only screen and (min-width: 968px) {
+	
+#navbar {
+    border: none;
+	padding-left: 15rem;
+}
+#navbar a {
+	padding-right: .625em;
+}
+#navbar input {
+    display: block;
+}
+#one, #two {
+    font-size: 1em;
+}
+#intro {
+    float: left;
+    font-size: 1.25em;
+    padding: 100px 0 100px 70px;
+}
+#one {
+    text-align: left;
+    padding: 50px 20px;
+}
+#one .bank, #one h3 {
+    padding: 0 130px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+	
+#navbar {
+	padding-left: 15rem;
+}
+#navbar a {
+	padding-right: .625em;
+}
+#one {
+    padding: 50px;
+}
+}
